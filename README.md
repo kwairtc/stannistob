@@ -1,6 +1,8 @@
 # Kwai Stannis Audio SDK  
 
 ## Stannis 
+
+### Android  
 接入Android端需要stannis aar和ksaudioprocesslib aar  
 Android还需要接入华为audiokit  
 allprojects > repositories
@@ -31,9 +33,27 @@ dependencies {
      implementation 'com.huawei.multimedia:audiokit:1.0.5'    
 }
 ```
-接入iOS端需要KWStannis.framework
 
+### iOS  
+
+接入iOS端需要KWStannis.framework。 
+此外还需要接入以下与stannis相关的系统库。 
+```
+libz.tbd
+libiconv.tbd
+libc++.tbd
+AudioToolbox.framework
+VideoToolbox.framework
+CoreTelephony.framework
+CoreMedia.framework
+```
+
+
+### 文档
 stannis的接入文档：https://docs.qingque.cn/d/home/eZQBoEDJcuiilPFOcQfXNcMsO?identityId=1oEDz9dPp2a    
+
+
+----
 
 ## 接入OpenAPI
 
